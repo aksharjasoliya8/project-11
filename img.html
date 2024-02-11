@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html
+{
+	/* padding: 0 1em; */
+	font-family: Calibri, sans-serif;
+    
+}
+
+.cd__main{
+    max-width: 820px ;
+   
+}
+
+img
+{
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+              
+}
+
+.lol{
+   
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+.image-left, .image-right
+{
+	margin: 1em 0;
+    
+}
+.h2{
+    margin-top: 100%;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+</style>
+<body>
+    <div class="lol">
+    <div class="image-left">
+        <img src="img-4.jpg" alt="Text with image example">
+        <div>
+    <h2> Text with Left Image </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu, massa scelerisque ac, cursus et, sollicitudin a, orci.</p>
+            <footer>(A dummy text)</footer>
+        </div>
+    </div>
+    
+    <div class="image-right">
+        <img src="img-5.jpg" alt="Text with image example">
+        <div>
+    <h2> Text with Right Image </h2>
+            <p>Praesent in mauris eu tortor porttitor accumsan. Duis bibendum. Morbi non erat non ipsum pharetra tempus. Du is iaculis laoreet odio. Vestibulum id ligula porta felis euismod semper. Sed euismod. Maecenas id ante. Nunc pellentesque. Sed vestibulum. Integer in ante. Nunc elementum.</p>
+            <footer>(Placeholder text)</footer>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

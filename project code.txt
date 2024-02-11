@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  
+    .navbar{
+            /* background-color: transparent; */
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            position: fixed;
+            /* padding-left: 10%; */
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 15px 20px;
+            
+            
+        }
+        
+        .navbar li a{
+            padding: 2px 30px;
+            text-decoration: none;
+            
+            color: white;
+        }
+        .navbar li a:hover{
+            color:darkgoldenrod;
+        }
+        .search{
+            float: right;
+            color: black;
+            padding: 15px 300px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 200px;
+        }
+* {
+  box-sizing: border-box;
+}
+
+body {
+    position:relative;
+  margin: 0;
+  /* font-family: Arial; */
+  font-size: 17px;
+}
+
+#myVideo {
+    position:relative;
+  right: 0;
+  
+  width: 100%; 
+ 
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  /* background: #000; */
+  /* color: #fff; */
+  cursor: pointer;
+}
+header{
+    padding-bottom: 45%;
+    
+    
+}
+h1{
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(237, 165, 71);
+  
+  
+}
+h4{
+  color:rgb(169,169,169);
+  
+ 
+}
+.hilite{
+ 
+  padding-left: 10%;
+  
+}
+/* .package{
+  background-color: black;
+} */
+
+/* img{
+    height: 10%;
+    width: 10%;
+    padding-right: 10;
+    bottom: 10%;
+} */
+
+
+/* #myBtn:hover {
+  background: #ddd;
+  color: black;
+} */
+* {box-sizing: border-box;}
+
+.images {
+ 
+  width: 50%;
+  max-width: 30%;
+  padding-left: 10%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 20%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.images:hover .overlay {
+  opacity: 1;
+}
+.center{
+    margin: 30px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 290px;
+    margin-top: 80px;
+    border-radius: 5px;
+
+}
+.center img{
+    width: 198px;
+    height:auto;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+  
+<video autoplay muted loop id="myVideo">
+  <source src="short video.mkv" type="video/mp4">
+  <audio src="short video.mkv" type="mp4"></audio>
+  Your browser does not support HTML5 video.
+  
+</video>
+
+
+<div class="content">
+
+
+
+  <!-- <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p> -->
+  <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+ 
+  <div class="header">
+    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <b>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website"></b>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>.
+    
+  </div>
+  
+</div>
+
+
+
+<!-- <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script> -->
+<div class="hilite">
+<h1>Highlighted Events</h1>
+<h4>Recommended camps by our Instructors</h4>
+
+</div>
+<div class="images">
+  <img src="pexels-eberhard-grossgasteiger-443446.jpg" alt="Avatar" class="image">
+  <div class="overlay">My Name is John</div>
+
+</div>
+<div class="center">
+  <a target="_blank" href="darshan.html">
+ <img class="centermak" src="pexels-pixabay-459203.jpg" alt="#"></a>
+<!-- <center> <div class="desc">DARSHAN RAVAL</div></center> -->
+</div>
+
+</body>
+</html>

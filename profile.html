@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+    <title>PROFILE</title>
+</head>
+<style>
+    header{
+        height: 120px;
+        width: 100%;
+        background-color: orangered;
+    }
+    h1{
+        color:white;
+        padding-left: 40%;
+        padding-top: 12px;
+       
+    }
+    h3{
+        color: white;
+        padding-left: 40%;
+        
+    }
+    section form{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    legend{
+        color: orangered;
+        
+    }
+    .l1
+    {
+        margin-left: 100px;
+    }
+    .btn1{
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+    .l2{
+        margin-left: 100px;
+    }
+    .l3{
+        margin-left: 300px;
+    }
+    .t1{
+        margin-left: 100px;
+        width: 30%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+    }
+    .t2{
+        margin-left: 75px;
+        width: 30%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+    }
+    .l4{
+        margin-left: 100px;
+        
+    }
+    .l5{
+        margin-left: 80px;
+    }
+    .l6{
+        margin-left: 165px;
+    }
+    .l7{
+        margin-left: 100px;
+    }
+    .b1{
+        margin-left: 100px;
+        border-radius: 2px 2px 2px 2px;
+        width: 12%;
+        height: 20px;
+    }
+    .s1{
+        margin-left: 40px;
+
+    }
+    .t3{
+        margin-left: 102px;
+        width: 10%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+
+
+    }
+    .t4{
+        margin-left: 42px;
+        width: 10%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+
+
+    }
+    .l8{
+        margin-left: 100px;
+    }
+    .e1{
+        margin-left: 100px;
+        width: 30%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+
+    }
+    .l9{
+        margin-left: 100px;
+    }
+    .btn2{
+        margin-left: 100px;
+        margin-top: 5px;
+    }
+    .l10{
+        margin-left: 100px;
+    }
+    .l11{
+        margin-left: 330px;
+    }
+    .t5{
+        margin-left: 100px;
+        width: 30%;
+        height: 20px;
+        border-radius: 2px 2px 2px 2px;
+
+    }
+    .s2{
+        margin-left: 78px;
+    }
+    section p{
+        margin-left: 100px;
+    }
+    .l12{
+        margin-left: 100px;
+    }
+    .ta1{
+        margin-left: 100px;
+        border-radius: 2px 2px 2px 2px;
+
+    }
+    .btn3{
+        margin-left: 220px;
+        margin-top: 5px;
+        color: white;
+        width: 14%;
+        height: 35px;
+        background-color: orangered;
+        
+    }
+    h1{
+  color: darkslategray;
+}
+
+p {
+  font-size: 12pt;
+  /* color: black; */
+  /* position: relative; */
+}
+canvas {
+  height: 120px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  padding-left: 10%;
+  /* padding-top: 10%; */
+  position: absolute;
+}
+
+/* input {
+  font-family: verdana;
+  font-size: 12pt;
+ 
+} */
+.container{
+    background-color: black;
+    position: relative;
+    
+}
+   
+</style>
+<body>
+    
+   
+    <header>
+        
+        <canvas id= "canv1" ></canvas>
+        <h1 style="color: white;">My profile</h1>
+        <h3>keep your profile up to date for better  trekking experience..</h3>
+        
+        
+    </header>
+    
+    <div class="container">
+        
+    </div>
+    <section>
+        <form action="">
+            <fieldset>
+                <legend><b>Personal Details</b></legend>
+                <label for="" class="l1" style="color: burlywood; font-size: 30px;">Profile Picture</label><br>
+                <!-- <input type="file"class="btn1"name="img"id="img"value="Upload"><br><br> -->
+                <!-- <input type="file" id="img" name="img" accept="image/*"> -->
+                <p>
+            
+                    Filename:
+                    <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+                </p>
+
+                <label for="" class="l2">First Name</label>
+                <label for="" class="l3">Last Name</label><br>
+                <input type="text"name="First name" class="t1"placeholder="Enter">
+                <input type="text"name="Last name" class="t2"placeholder="Enter"><br><br>
+
+                <label for="" class="l4">Birth of date</label>
+                <label for="" class="l5">Gender</label>
+                <label for="" class="l6">Height</label>
+                <label for="" class="l7">Weight</label><br> 
+                <input type="date"class="b1">
+                <select name="Gender" class="s1"> 
+                    <option value="-1" selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                <input type="text" name="Height"class="t3"placeholder="0cm">
+                <input type="text" name="weight"class="t4"placeholder="0kg"><br><br>
+
+                <label for="" class="l8">E-mail</label><br>
+                <input type="email"placeholder="mail123@gmail.com" class="e1">
+            </fieldset>
+        </form>
+                <form action="">
+                <fieldset>
+                        <legend><b>Emergency Details</b></legend>
+                        <label for="" class="l9">Your Id Proof</label><br>
+                        <input type="file"class="btn2"name=""id=""value="Upload"><br><br>
+
+                        <label for="" class="l10">Mobile</label>
+                        <label for="" class="l11">Blood Group</label><br>
+                        <input type="text"name="mobile"class="t5"placeholder="90xxxxxx12">
+                        <select name="Blood Group" class="s2"> 
+                            <option value="-1" selected>Select..</option>
+                            <option value="I don't know">I don't know</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB+</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select><br>
+                        <p>please enter your guardian's contact number</p><br>
+
+
+                        <label for="" class="l12">Address</label><br>
+                        <textarea name="" class="ta1"cols="20"rows="3"placeholder="Enter here..."required></textarea>
+                </fieldset>
+           
+        </form><br>
+        <button type="button" class="btn3">Save→</button>
+
+    </section>
+    <script>
+        function upload(){
+  var imgcanvas = document.getElementById("canv1");
+  var fileinput = document.getElementById("finput");
+  var image = new SimpleImage(fileinput);
+  image.drawTo(imgcanvas);
+}
+    </script>
+</body>
+</html>
